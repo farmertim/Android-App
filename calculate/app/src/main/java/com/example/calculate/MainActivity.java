@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void checkString(String s){
         array=s.split("[+,\\-,*,/]");
-
         //alertMessage(String.valueOf(array.length)+"K");
         if(array.length==1){
             //alertMessage(".");
