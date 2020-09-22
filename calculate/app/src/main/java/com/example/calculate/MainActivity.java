@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     //private EditText appear;
     private TextView process, appear;
     private String stringProcess="",temp="",english="";
-    private double first,second;
     private String[] array,array1;
     private int count=0;
 
@@ -42,48 +41,38 @@ public class MainActivity extends AppCompatActivity {
         alertMessage("successful");
         return true;
     }
-    public void checkPoint(String point){
+    public void checkPoint(String point){//判斷小數點是否重複
         array1=point.split("\\.");
-        //alertMessage(String.valueOf(array1.length));
         if(array1.length<=2){
             stringProcess+=english;
         }
         process.setText(stringProcess);
-
     }
-    public void checkString(String s){
+    public void checkString(String s){//判斷運算符號 不能重複輸入符號
         array=s.split("[+,\\-,*,/]");
-
-        //alertMessage(String.valueOf(array.length)+"K");
         if(array.length==1){
-            //alertMessage(".");
             checkPoint(stringProcess+english+" ");
         }
         else if(array.length==2){
-            //alertMessage(array[1]);
             if(count==0) {
                 temp = english;
                 count++;
             }
-
             process.setText(stringProcess);
             checkPoint(array[1]+" ");
         }
     }
-    public void addString(String s) {
+    public void addString(String s) {//按下Button觸發事件
         english=s;
         try {
-            if (s.equals("clear")) {
+            if (s.equals("clear")) {//清空所有process and answer
                 appear.setText("");
                 process.setText("");
                 temp="";
                 count=0;
                 stringProcess="";
             }
-            else if(s.equals("=")){
-                //alertMessage(temp+"temp"+stringProcess);
-
-                //alertMessage(array[0]+" "+array[1]);
+            else if(s.equals("=")){//appear answer
                 double finalAnswer=0;
                 if(temp.equals("*")){
                     array=stringProcess.split("[*]");
@@ -101,9 +90,8 @@ public class MainActivity extends AppCompatActivity {
                 appear.setText(String.valueOf(finalAnswer));
             }
             else{
-                checkString(stringProcess+s+ " ");
+                checkString(stringProcess+s+ " ");//合併自串 檢查計算機格式是否正確
             }
-
         }catch (Exception e){
             alertMessage(e.toString());
         }
