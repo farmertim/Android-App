@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/show2"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_x="214dp"
+        android:layout_y="130dp"
+        android:text="英里"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
+        android:layout_x="77dp"
+        android:layout_y="7dp"
+        android:inputType="text"
+        android:textSize="17dp"
+        android:hint="@string/km"
+        />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_x="224dp"
+        android:layout_y="9dp"
+        android:text="公里"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
+        android:layout_x="72dp"
+        android:layout_y="131dp"
+        android:inputType="text"
+        android:textSize="17dp"
+        android:hint="@string/mile"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonshow"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_x="78dp"
+        android:layout_y="60dp"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/buttonshow2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_x="162dp"
+        android:layout_y="58dp"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+</AbsoluteLayout>

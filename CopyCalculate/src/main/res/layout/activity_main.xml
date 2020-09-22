@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/process"
+        android:layout_width="361dp"
+        android:layout_height="47dp"
+        android:layout_x="26dp"
+        android:layout_y="112dp"
+        android:gravity="right"
+        android:text=""
+
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/appear"
+        android:layout_width="361dp"
+        android:layout_height="71dp"
+        android:layout_x="30dp"
+        android:layout_y="163dp"
+        android:gravity="center"
+
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/answer"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="205dp"
+        android:layout_y="600dp"
+        android:gravity="center"
+        android:text="="
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/point"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="104dp"
+        android:layout_y="602dp"
+        android:gravity="center"
+        android:text="."
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="3dp"
+        android:layout_y="601dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="203dp"
+        android:layout_y="509dp"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="101dp"
+        android:layout_y="510dp"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="3dp"
+        android:layout_y="511dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="202dp"
+        android:layout_y="419dp"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="104dp"
+        android:layout_y="419dp"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/fore"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="3dp"
+        android:layout_y="421dp"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="305dp"
+        android:layout_y="598dp"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/reduce"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="305dp"
+        android:layout_y="510dp"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="302dp"
+        android:layout_y="422dp"
+        android:gravity="center"
+        android:text="X"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="304dp"
+        android:layout_y="332dp"
+        android:gravity="center"
+        android:text="/"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="203dp"
+        android:layout_y="331dp"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="103dp"
+        android:layout_y="330dp"
+        android:gravity="center"
+        android:text="8"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="3dp"
+        android:layout_y="332dp"
+        android:gravity="center"
+        android:text="7"
+        android:textSize="60dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="302dp"
+        android:layout_y="242dp"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_x="203dp"
+        android:layout_y="243dp"
+        android:gravity="center"
+        android:text="C"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="361dp"
+        android:layout_height="71dp"
+        android:layout_x="24dp"
+        android:layout_y="38dp"
+        android:gravity="center"
+        android:text="計算機"
+        android:textSize="60dp" />
+
+</AbsoluteLayout>
+
+

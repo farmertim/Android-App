@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="mile">請輸入英里</string>
+    <string name="km">請輸入公里</string>
+</resources>
