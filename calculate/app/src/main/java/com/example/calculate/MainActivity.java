@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 public class MainActivity extends AppCompatActivity {
 
     private Button one, two, three, fore, five, six, seven, eight, nine, zero, add, reduce, mul, divide, answer, clear, point;
-    //private EditText appear;
+    
     private TextView process, appear;
     private String stringProcess="",temp="",english="";
     private double first,second;
