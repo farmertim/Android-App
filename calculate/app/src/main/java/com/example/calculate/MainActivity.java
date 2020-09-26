@@ -23,23 +23,13 @@ public class MainActivity extends AppCompatActivity {
     private int count=0;
 
     private boolean checkNumber=true;
-    public void alertMessage(String alert){
-        AlertDialog.Builder Alert=new AlertDialog.Builder(this);
+    public void alertMessage(String alert) {
+        AlertDialog.Builder Alert = new AlertDialog.Builder(this);
         Alert.setTitle("Error");
         Alert.setMessage(alert);
         Alert.show();
         process.setText("");
         appear.setText("");
-    }
-    public boolean isNumber(String check){
-        Pattern pattern = Pattern.compile("");
-        Matcher isNum=pattern.matcher(check);
-        if(!isNum.matches()){
-            alertMessage("errorerror");
-            return false;
-        }
-        alertMessage("successful");
-        return true;
     }
     public void checkPoint(String point){//判斷小數點是否重複
         array1=point.split("\\.");
@@ -88,8 +78,12 @@ public class MainActivity extends AppCompatActivity {
                     finalAnswer=Double.parseDouble(array[0])-Double.parseDouble(array[1]);
                 }
                 appear.setText(String.valueOf(finalAnswer));
+                stringProcess=String.valueOf(finalAnswer);
+                count=0;
+                temp="";
             }
             else{
+
                 checkString(stringProcess+s+ " ");//合併自串 檢查計算機格式是否正確
             }
         }catch (Exception e){
