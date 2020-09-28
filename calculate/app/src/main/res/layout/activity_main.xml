@@ -187,19 +187,11 @@
         android:text="7"
         android:textSize="60dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="98dp"
-        android:layout_height="88dp"
-        android:layout_x="302dp"
-        android:layout_y="242dp"
-        app:srcCompat="@android:drawable/ic_media_rew" />
-
     <Button
         android:id="@+id/clear"
         android:layout_width="98dp"
         android:layout_height="88dp"
-        android:layout_x="203dp"
+        android:layout_x="300dp"
         android:layout_y="243dp"
         android:gravity="center"
         android:text="C"
